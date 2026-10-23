@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-16T18:55:45.232Z",
+  "title": "Design System: Dayshawn Terry Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "board": {
+        "role": "neutral",
+        "displayName": "Board Charcoal",
+        "canonical": "#15181c",
+        "tonalRamp": [
+          "oklch(15.00% 0.00920 255.62)",
+          "oklch(26.43% 0.00920 255.62)",
+          "oklch(37.86% 0.00920 255.62)",
+          "oklch(49.29% 0.00920 255.62)",
+          "oklch(60.71% 0.00920 255.62)",
+          "oklch(72.14% 0.00920 255.62)",
+          "oklch(83.57% 0.00920 255.62)",
+          "oklch(95.00% 0.00920 255.62)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel Charcoal",
+        "canonical": "#1d2126",
+        "tonalRamp": [
+          "oklch(15.00% 0.01122 254.05)",
+          "oklch(26.43% 0.01122 254.05)",
+          "oklch(37.86% 0.01122 254.05)",
+          "oklch(49.29% 0.01122 254.05)",
+          "oklch(60.71% 0.01122 254.05)",
+          "oklch(72.14% 0.01122 254.05)",
+          "oklch(83.57% 0.01122 254.05)",
+          "oklch(95.00% 0.01122 254.05)"
+        ]
+      },
+      "slot": {
+        "role": "neutral",
+        "displayName": "Slot Black",
+        "canonical": "#0e1013",
+        "tonalRamp": [
+          "oklch(15.00% 0.00704 258.37)",
+          "oklch(26.43% 0.00704 258.37)",
+          "oklch(37.86% 0.00704 258.37)",
+          "oklch(49.29% 0.00704 258.37)",
+          "oklch(60.71% 0.00704 258.37)",
+          "oklch(72.14% 0.00704 258.37)",
+          "oklch(83.57% 0.00704 258.37)",
+          "oklch(95.00% 0.00704 258.37)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Board Rule",
+        "canonical": "#353b43",
+        "tonalRamp": [
+          "oklch(15.00% 0.01616 255.62)",
+          "oklch(26.43% 0.01616 255.62)",
+          "oklch(37.86% 0.01616 255.62)",
+          "oklch(49.29% 0.01616 255.62)",
+          "oklch(60.71% 0.01616 255.62)",
+          "oklch(72.14% 0.01616 255.62)",
+          "oklch(83.57% 0.01616 255.62)",
+          "oklch(95.00% 0.01616 255.62)"
+        ]
+      },
+      "chalk": {
+        "role": "neutral",
+        "displayName": "Chalk",
+        "canonical": "#aeb3ba",
+        "tonalRamp": [
+          "oklch(15.00% 0.01145 256.71)",
+          "oklch(26.43% 0.01145 256.71)",
+          "oklch(37.86% 0.01145 256.71)",
+          "oklch(49.29% 0.01145 256.71)",
+          "oklch(60.71% 0.01145 256.71)",
+          "oklch(72.14% 0.01145 256.71)",
+          "oklch(83.57% 0.01145 256.71)",
+          "oklch(95.00% 0.01145 256.71)"
+        ]
+      },
+      "paint": {
+        "role": "neutral",
+        "displayName": "Board Paint",
+        "canonical": "#e9e7e0",
+        "tonalRamp": [
+          "oklch(15.00% 0.00961 93.57)",
+          "oklch(26.43% 0.00961 93.57)",
+          "oklch(37.86% 0.00961 93.57)",
+          "oklch(49.29% 0.00961 93.57)",
+          "oklch(60.71% 0.00961 93.57)",
+          "oklch(72.14% 0.00961 93.57)",
+          "oklch(83.57% 0.00961 93.57)",
+          "oklch(95.00% 0.00961 93.57)"
+        ]
+      },
+      "enamel": {
+        "role": "neutral",
+        "displayName": "Enamel",
+        "canonical": "#f1efe8",
+        "tonalRamp": [
+          "oklch(15.00% 0.00955 93.57)",
+          "oklch(26.43% 0.00955 93.57)",
+          "oklch(37.86% 0.00955 93.57)",
+          "oklch(49.29% 0.00955 93.57)",
+          "oklch(60.71% 0.00955 93.57)",
+          "oklch(72.14% 0.00955 93.57)",
+          "oklch(83.57% 0.00955 93.57)",
+          "oklch(95.00% 0.00955 93.57)"
+        ]
+      },
+      "enamel-ink": {
+        "role": "neutral",
+        "displayName": "Enamel Ink",
+        "canonical": "#15181c",
+        "tonalRamp": [
+          "oklch(15.00% 0.00920 255.62)",
+          "oklch(26.43% 0.00920 255.62)",
+          "oklch(37.86% 0.00920 255.62)",
+          "oklch(49.29% 0.00920 255.62)",
+          "oklch(60.71% 0.00920 255.62)",
+          "oklch(72.14% 0.00920 255.62)",
+          "oklch(83.57% 0.00920 255.62)",
+          "oklch(95.00% 0.00920 255.62)"
+        ]
+      },
+      "enamel-muted": {
+        "role": "neutral",
+        "displayName": "Enamel Grey",
+        "canonical": "#4a4f57",
+        "tonalRamp": [
+          "oklch(15.00% 0.01475 259.82)",
+          "oklch(26.43% 0.01475 259.82)",
+          "oklch(37.86% 0.01475 259.82)",
+          "oklch(49.29% 0.01475 259.82)",
+          "oklch(60.71% 0.01475 259.82)",
+          "oklch(72.14% 0.01475 259.82)",
+          "oklch(83.57% 0.01475 259.82)",
+          "oklch(95.00% 0.01475 259.82)"
+        ]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Sign-Painter Gold",
+        "canonical": "#e7b53c",
+        "tonalRamp": [
+          "oklch(15.00% 0.14377 85.24)",
+          "oklch(26.43% 0.14377 85.24)",
+          "oklch(37.86% 0.14377 85.24)",
+          "oklch(49.29% 0.14377 85.24)",
+          "oklch(60.71% 0.14377 85.24)",
+          "oklch(72.14% 0.14377 85.24)",
+          "oklch(83.57% 0.14377 85.24)",
+          "oklch(95.00% 0.14377 85.24)"
+        ]
+      },
+      "gold-deep": {
+        "role": "primary",
+        "displayName": "Burnished Gold",
+        "canonical": "#c99a22",
+        "tonalRamp": [
+          "oklch(15.00% 0.13687 84.94)",
+          "oklch(26.43% 0.13687 84.94)",
+          "oklch(37.86% 0.13687 84.94)",
+          "oklch(49.29% 0.13687 84.94)",
+          "oklch(60.71% 0.13687 84.94)",
+          "oklch(72.14% 0.13687 84.94)",
+          "oklch(83.57% 0.13687 84.94)",
+          "oklch(95.00% 0.13687 84.94)"
+        ]
+      },
+      "lamp": {
+        "role": "tertiary",
+        "displayName": "Live Lamp Red",
+        "canonical": "#e5483a",
+        "tonalRamp": [
+          "oklch(15.00% 0.19588 28.98)",
+          "oklch(26.43% 0.19588 28.98)",
+          "oklch(37.86% 0.19588 28.98)",
+          "oklch(49.29% 0.19588 28.98)",
+          "oklch(60.71% 0.19588 28.98)",
+          "oklch(72.14% 0.19588 28.98)",
+          "oklch(83.57% 0.19588 28.98)",
+          "oklch(95.00% 0.19588 28.98)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name, one word per enamel tile; drops into its slot once on load."
+      },
+      "closing": {
+        "displayName": "Closing",
+        "purpose": "Contact headline on the gold band."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles set on a single enamel tile."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Gold tabular numerals in line-score slots and large painted names."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Decision, stage, product and skill-group names in board lettering."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "Primary and outline plates."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase table headers and board-column navigation."
+      },
+      "body-lead": {
+        "displayName": "Body Lead",
+        "purpose": "Section introductions, about and contact prose in Archivo."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Decision, job and box-score prose in Archivo."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Technology tags, skill chips, captions and stack lines."
+      }
+    },
+    "shadows": [
+      {
+        "name": "slot-ring",
+        "value": "0 0 0 5px var(--color-slot)",
+        "purpose": "Slot edge seating an enamel tile (4px on board titles and phone tiles, 3px on the monogram). Not elevation."
+      },
+      {
+        "name": "lamp-bevel",
+        "value": "inset 0 -2px 0 rgb(0 0 0 / .25)",
+        "purpose": "Shaded underside of the 10px live lamp only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Deceleration for tile drop, plate slide, connector draw and icon nudges."
+      },
+      {
+        "name": "duration-feedback",
+        "value": "180ms",
+        "purpose": "Color and border feedback on plates, links, stages and nav; 2-3px action-icon nudge with a fine pointer."
+      },
+      {
+        "name": "duration-detail",
+        "value": "240ms",
+        "purpose": "Plate slide (24px from 50% opacity) for the pipeline explanation; nav dot and header rule transitions."
+      },
+      {
+        "name": "duration-flow",
+        "value": "320ms",
+        "purpose": "Incoming pipeline connector stroke draw after a stage is chosen."
+      },
+      {
+        "name": "tile-drop",
+        "value": "620ms translateY(-18px to 0)",
+        "purpose": "Hero name tiles (second +110ms) drop into their slots once on load."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "none",
+        "purpose": "prefers-reduced-motion removes all animation, transitions, icon displacement and smooth scrolling."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-desktop",
+        "value": "1100px"
+      },
+      {
+        "name": "tablet",
+        "value": "800px"
+      },
+      {
+        "name": "phone",
+        "value": "560px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Plate",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Gold action plate with enamel-ink board lettering; hover turns enamel, press burnishes.",
+      "html": "<a class=\"ds-btn\" href=\"#work\">View SportApp<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M12 5v14m-6-6 6 6 6-6\"/></svg></a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:54px;padding:12px 24px 10px;border-radius:0;text-decoration:none;font-family:'Big Shoulders Display Variable','Arial Narrow',sans-serif;font-size:23px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;background:var(--color-gold,#e7b53c);color:var(--color-enamel-ink,#15181c);transition:background 180ms,color 180ms;}.ds-btn:hover{background:var(--color-enamel,#f1efe8);}.ds-btn:active{background:var(--color-gold-deep,#c99a22);}.ds-btn>svg{transition:transform 180ms cubic-bezier(.16,1,.3,1);}@media(hover:hover) and (pointer:fine){.ds-btn:is(:hover,:focus-visible)>svg{transform:translateY(2px);}}.ds-btn:focus-visible,.ds-outline:focus-visible,.ds-link:focus-visible,.ds-nav a:focus-visible,.ds-stage:focus-visible{outline:3px solid var(--color-gold,#e7b53c);outline-offset:4px;}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}"
+    },
+    {
+      "name": "Outline Plate",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Header contact: 2px gold frame that fills gold on hover or when current.",
+      "html": "<a class=\"ds-outline\" href=\"#contact\">Contact<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M12 5v14m-6-6 6 6 6-6\"/></svg></a>",
+      "css": ".ds-outline{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 18px;border:2px solid var(--color-gold,#e7b53c);border-radius:0;color:var(--color-gold,#e7b53c);font-family:'Big Shoulders Display Variable','Arial Narrow',sans-serif;font-size:21px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;transition:background 180ms,color 180ms;}.ds-outline svg{width:18px;height:18px;}.ds-outline:hover,.ds-outline[aria-current=location]{background:var(--color-gold,#e7b53c);color:var(--color-enamel-ink,#15181c);}.ds-btn:focus-visible,.ds-outline:focus-visible,.ds-link:focus-visible,.ds-nav a:focus-visible,.ds-stage:focus-visible{outline:3px solid var(--color-gold,#e7b53c);outline-offset:4px;}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "text-link",
+      "description": "Archivo secondary link in board paint; hover turns gold and underlines.",
+      "html": "<a class=\"ds-link\" href=\"#case-study\">See how SportApp works<svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M7 17 17 7M8 7h9v9\"/></svg></a>",
+      "css": ".ds-link{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-family:'Archivo Variable','Arial Narrow',sans-serif;font-size:17px;font-weight:650;text-decoration:none;color:var(--color-paint,#e9e7e0);text-decoration-thickness:2px;text-underline-offset:6px;}.ds-link:hover{color:var(--color-gold,#e7b53c);text-decoration:underline;}.ds-link>svg{transition:transform 180ms cubic-bezier(.16,1,.3,1);}@media(hover:hover) and (pointer:fine){.ds-link:is(:hover,:focus-visible)>svg{transform:translate(2px,-2px);}}.ds-btn:focus-visible,.ds-outline:focus-visible,.ds-link:focus-visible,.ds-nav a:focus-visible,.ds-stage:focus-visible{outline:3px solid var(--color-gold,#e7b53c);outline-offset:4px;}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}"
+    },
+    {
+      "name": "Technology Tag",
+      "kind": "chip",
+      "refersTo": "technology-tag",
+      "description": "Noninteractive 1px rule-outlined tag; no hover or selected state.",
+      "html": "<span class=\"ds-tag\">FastAPI</span>",
+      "css": ".ds-tag{display:inline-block;font-family:'Archivo Variable','Arial Narrow',sans-serif;font-size:14px;font-weight:600;color:var(--color-paint,#e9e7e0);border:1px solid var(--color-rule,#353b43);border-radius:0;padding:5px 11px;}"
+    },
+    {
+      "name": "Board Navigation",
+      "kind": "nav",
+      "refersTo": "navigation-link",
+      "description": "Uppercase board-column links with an unlit dot; the current section turns gold and lights its dot red.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary navigation\"><a href=\"#work\" aria-current=\"location\">Work</a><a href=\"#experience\">Experience</a><a href=\"#about\">About</a></nav>",
+      "css": ".ds-nav{display:flex;gap:6px;}.ds-nav a{display:flex;align-items:center;gap:9px;min-height:44px;padding-inline:14px;font-family:'Big Shoulders Display Variable','Arial Narrow',sans-serif;font-size:21px;font-weight:650;text-transform:uppercase;letter-spacing:.04em;color:var(--color-chalk,#aeb3ba);text-decoration:none;transition:color 180ms;}.ds-nav a::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--color-rule,#353b43);transition:background 240ms cubic-bezier(.16,1,.3,1);}.ds-nav a:hover{color:var(--color-paint,#e9e7e0);}.ds-nav a[aria-current=location]{color:var(--color-gold,#e7b53c);}.ds-nav a[aria-current=location]::before{background:var(--color-lamp,#e5483a);}.ds-btn:focus-visible,.ds-outline:focus-visible,.ds-link:focus-visible,.ds-nav a:focus-visible,.ds-stage:focus-visible{outline:3px solid var(--color-gold,#e7b53c);outline-offset:4px;}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}"
+    },
+    {
+      "name": "Enamel Tile",
+      "kind": "custom",
+      "refersTo": "enamel-tile",
+      "description": "Signature tile: enamel with board-ink lettering, seated by the slot ring; hero tiles drop into place once on load.",
+      "html": "<h2 class=\"ds-tile\">SportApp</h2>",
+      "css": ".ds-tile{display:inline-block;margin:6px;background:var(--color-enamel,#f1efe8);color:var(--color-enamel-ink,#15181c);font-family:'Big Shoulders Display Variable','Arial Narrow',sans-serif;font-size:clamp(2.6rem,4.4vw,3.75rem);font-weight:800;line-height:1;text-transform:uppercase;letter-spacing:.01em;padding:.12em .3em .08em;border-radius:0;box-shadow:0 0 0 4px var(--color-slot,#0e1013);animation:ds-tile-drop 620ms cubic-bezier(.16,1,.3,1) both;}@keyframes ds-tile-drop{from{transform:translateY(-18px);}to{transform:translateY(0);}}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}"
+    },
+    {
+      "name": "Bolted Panel",
+      "kind": "card",
+      "refersTo": "bolted-panel",
+      "description": "Panel charcoal with a 2px rule frame and four flat rivet heads; no shadow.",
+      "html": "<article class=\"ds-panel\"><h4>Data modeling</h4><p>Separated raw provider data from the normalized tables the interface reads.</p></article>",
+      "css": ".ds-panel{background-color:var(--color-panel,#1d2126);background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Ccircle cx='4' cy='4' r='4' fill='%23434a53'/%3E%3C/svg%3E\"),url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Ccircle cx='4' cy='4' r='4' fill='%23434a53'/%3E%3C/svg%3E\"),url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Ccircle cx='4' cy='4' r='4' fill='%23434a53'/%3E%3C/svg%3E\"),url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Ccircle cx='4' cy='4' r='4' fill='%23434a53'/%3E%3C/svg%3E\");background-repeat:no-repeat;background-position:top 10px left 10px,top 10px right 10px,bottom 10px left 10px,bottom 10px right 10px;border:2px solid var(--color-rule,#353b43);border-radius:0;padding:28px 32px;color:var(--color-paint,#e9e7e0);font-family:'Archivo Variable','Arial Narrow',sans-serif;}.ds-panel h4{margin:0 0 12px;font-family:'Big Shoulders Display Variable','Arial Narrow',sans-serif;font-size:30px;font-weight:850;line-height:1;text-transform:uppercase;color:var(--color-gold,#e7b53c);}.ds-panel p{margin:0;font-size:17px;line-height:1.65;color:var(--color-chalk,#aeb3ba);max-width:60ch;}"
+    },
+    {
+      "name": "Score Slot",
+      "kind": "custom",
+      "refersTo": "score-slot",
+      "description": "Line-score cell: chalk uppercase header over a 2px gold rule, gold tabular figure in a slot-black cell.",
+      "html": "<div class=\"ds-score\"><span class=\"ds-score-label\">Reusable components</span><span class=\"ds-score-figure\">55+</span></div>",
+      "css": ".ds-score{display:inline-flex;flex-direction:column;min-width:200px;}.ds-score-label{padding:0 2px 8px;border-bottom:2px solid var(--color-gold,#e7b53c);font-family:'Big Shoulders Display Variable','Arial Narrow',sans-serif;font-size:18px;font-weight:650;text-transform:uppercase;letter-spacing:.04em;color:var(--color-chalk,#aeb3ba);}.ds-score-figure{padding:12px 16px 6px;background:var(--color-slot,#0e1013);font-family:'Big Shoulders Display Variable','Arial Narrow',sans-serif;font-size:clamp(2.6rem,4.6vw,4.25rem);font-weight:800;line-height:1;color:var(--color-gold,#e7b53c);font-variant-numeric:tabular-nums;}"
+    },
+    {
+      "name": "Pipeline Stage",
+      "kind": "custom",
+      "refersTo": "pipeline-stage",
+      "description": "Stage tile on slot black; hover frames it gold.",
+      "html": "<button class=\"ds-stage\" type=\"button\" aria-pressed=\"false\"><span class=\"ds-stage-number\">1</span><span class=\"ds-stage-name\">Collect</span><span class=\"ds-stage-technology\">GitHub Actions</span></button>",
+      "css": ".ds-stage{font-family:'Archivo Variable','Arial Narrow',sans-serif;display:flex;flex-direction:column;width:180px;min-height:158px;text-align:left;border:2px solid var(--color-rule,#353b43);border-radius:0;padding:18px 16px 16px;background:var(--color-slot,#0e1013);color:var(--color-paint,#e9e7e0);cursor:pointer;transition:background 180ms,border-color 180ms,color 180ms;}.ds-stage:hover{border-color:var(--color-gold,#e7b53c);}.ds-stage[aria-pressed=true]{background:var(--color-enamel,#f1efe8);border-color:var(--color-enamel,#f1efe8);color:var(--color-enamel-ink,#15181c);}.ds-stage-number{font-family:'Big Shoulders Display Variable','Arial Narrow',sans-serif;font-size:24px;font-weight:800;line-height:1;color:var(--color-gold,#e7b53c);font-variant-numeric:tabular-nums;margin-bottom:18px;}.ds-stage[aria-pressed=true] .ds-stage-number{color:var(--color-enamel-ink,#15181c);}.ds-stage-name{font-family:'Big Shoulders Display Variable','Arial Narrow',sans-serif;font-size:28px;font-weight:800;text-transform:uppercase;line-height:1;}.ds-stage-technology{display:block;font-size:13px;margin-top:8px;line-height:1.4;color:var(--color-chalk,#aeb3ba);}.ds-stage[aria-pressed=true] .ds-stage-technology{color:var(--color-enamel-muted,#4a4f57);}.ds-btn:focus-visible,.ds-outline:focus-visible,.ds-link:focus-visible,.ds-nav a:focus-visible,.ds-stage:focus-visible{outline:3px solid var(--color-gold,#e7b53c);outline-offset:4px;}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}"
+    },
+    {
+      "name": "Selected Pipeline Stage",
+      "kind": "custom",
+      "refersTo": "pipeline-stage-selected",
+      "description": "Selected stage is solid enamel with ink lettering.",
+      "html": "<button class=\"ds-stage\" type=\"button\" aria-pressed=\"true\"><span class=\"ds-stage-number\">1</span><span class=\"ds-stage-name\">Collect</span><span class=\"ds-stage-technology\">GitHub Actions</span></button>",
+      "css": ".ds-stage{font-family:'Archivo Variable','Arial Narrow',sans-serif;display:flex;flex-direction:column;width:180px;min-height:158px;text-align:left;border:2px solid var(--color-rule,#353b43);border-radius:0;padding:18px 16px 16px;background:var(--color-slot,#0e1013);color:var(--color-paint,#e9e7e0);cursor:pointer;transition:background 180ms,border-color 180ms,color 180ms;}.ds-stage:hover{border-color:var(--color-gold,#e7b53c);}.ds-stage[aria-pressed=true]{background:var(--color-enamel,#f1efe8);border-color:var(--color-enamel,#f1efe8);color:var(--color-enamel-ink,#15181c);}.ds-stage-number{font-family:'Big Shoulders Display Variable','Arial Narrow',sans-serif;font-size:24px;font-weight:800;line-height:1;color:var(--color-gold,#e7b53c);font-variant-numeric:tabular-nums;margin-bottom:18px;}.ds-stage[aria-pressed=true] .ds-stage-number{color:var(--color-enamel-ink,#15181c);}.ds-stage-name{font-family:'Big Shoulders Display Variable','Arial Narrow',sans-serif;font-size:28px;font-weight:800;text-transform:uppercase;line-height:1;}.ds-stage-technology{display:block;font-size:13px;margin-top:8px;line-height:1.4;color:var(--color-chalk,#aeb3ba);}.ds-stage[aria-pressed=true] .ds-stage-technology{color:var(--color-enamel-muted,#4a4f57);}.ds-btn:focus-visible,.ds-outline:focus-visible,.ds-link:focus-visible,.ds-nav a:focus-visible,.ds-stage:focus-visible{outline:3px solid var(--color-gold,#e7b53c);outline-offset:4px;}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Multi-Sport Scoreboard",
+    "overview": "The page is a stadium scoreboard: a painted charcoal board on which the work is posted, not pitched. Names and figures sit on white enamel tiles slotted into the board; numerals, rules and the role line are hand-painted gold; one red lamp marks what is live. Condensed uppercase board lettering carries every name, heading, figure and control, while a plain grotesque carries prose and table detail so the reading stays easy.\n\nLong-form content (the now-posting panel, the pipeline, the decisions, the screenshot) hangs on bolted panels with flat rivet heads at the corners. Short hero copy is painted straight onto the board. Two bands change material: About is an enamel plate set in board ink, and Contact is a full gold field, the final score. The world is multi-sport (tennis, NFL, NBA), never tennis-only.\n\nEverything is square-cornered and flat. Depth comes from slotting: dark slots behind tiles, rules framing panels, enamel against charcoal. Motion is mechanical and brief: tiles drop into their slots once, and the pipeline detail plate slides into its slot when a stage is chosen.",
+    "keyCharacteristics": [
+      "Charcoal board ground, enamel tiles, hand-painted gold, a single red live lamp.",
+      "Big Shoulders Display uppercase for anything set on a tile or board; Archivo for prose and tables.",
+      "Real figures in fixed score cells with tabular numerals and a stated source.",
+      "Bolted panels with flat rivet heads instead of cards with shadows.",
+      "Square corners everywhere except lamps, nav dots and rivets.",
+      "One-time tile drop and plate slide, removed under reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The One Lamp Rule",
+        "body": "Red is a status light, not an accent. It appears only as a 10px lamp or an 8px nav dot.",
+        "section": "colors"
+      },
+      {
+        "name": "The Material Switch Rule",
+        "body": "A section changes material (board, enamel, gold) rather than tint. On enamel and gold, text, focus outlines and selection invert to enamel ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Board Lettering Rule",
+        "body": "Anything set on a tile, painted as a name, or used as a control is Big Shoulders uppercase. Sentences are always Archivo in mixed case.",
+        "section": "typography"
+      },
+      {
+        "name": "The Fixed Cell Rule",
+        "body": "Numerals in score cells, ordinals and periods use tabular figures so columns hold still.",
+        "section": "typography"
+      },
+      {
+        "name": "The Rivets Not Shadows Rule",
+        "body": "Panels are fixed to the board with four flat rivet heads (8px circles, 10px in from each corner) drawn as background images. Never add blur, offset or drop shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do set names, titles, figures and controls in Big Shoulders Display uppercase and keep sentences in Archivo.",
+      "Do seat enamel tiles with the slot ring (`0 0 0 4-5px` slot black) and keep every corner square.",
+      "Do hang long-form content on bolted panels with flat rivet heads and a 2px rule frame.",
+      "Do post only real figures, in tabular cells, with their source stated.",
+      "Do keep the board multi-sport: tennis, NFL and NBA side by side.",
+      "Do invert text, focus and selection to enamel ink on enamel and gold bands.",
+      "Do remove tile drop, plate slide, connector draw and icon nudges under `prefers-reduced-motion`."
+    ],
+    "donts": [
+      "Don't add blurred, offset or drop shadows; depth is slots, rules and rivets.",
+      "Don't round tiles, plates, panels or buttons; circles belong only to lamps, nav dots and rivets.",
+      "Don't use lamp red for text, fills or emphasis beyond a status lamp.",
+      "Don't use the selected enamel stage fill for hover; hover only frames in gold.",
+      "Don't loop or repeat the tile drop; it plays once on load.",
+      "Don't let the board read as tennis-only."
+    ]
+  }
+}

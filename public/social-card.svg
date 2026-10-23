@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#15181c"/>
+  <rect x="64" y="64" width="604" height="150" fill="#f1efe8"/>
+  <text x="88" y="188" font-family="Big Shoulders Display" font-weight="900" font-size="136" fill="#15181c">DAYSHAWN</text>
+  <rect x="64" y="230" width="350" height="150" fill="#f1efe8"/>
+  <text x="88" y="354" font-family="Big Shoulders Display" font-weight="900" font-size="136" fill="#15181c">TERRY</text>
+  <text x="64" y="448" font-family="Big Shoulders Display" font-weight="700" font-size="40" fill="#e7b53c" letter-spacing="2">SOFTWARE ENGINEER · FRONTEND EXPERIENCE · FULL-STACK PROJECT</text>
+  <rect x="784" y="64" width="352" height="316" fill="#1d2126" stroke="#353b43" stroke-width="3"/>
+  <g fill="#353b43"><circle cx="798" cy="78" r="4"/><circle cx="1122" cy="78" r="4"/><circle cx="798" cy="366" r="4"/><circle cx="1122" cy="366" r="4"/></g>
+  <text x="812" y="134" font-family="Big Shoulders Display" font-weight="900" font-size="68" fill="#e7b53c">SPORTAPP</text>
+  <g font-family="Big Shoulders Display" font-weight="900" font-size="38" fill="#15181c" text-anchor="middle">
+    <rect x="812" y="160" width="130" height="56" fill="#f1efe8"/><text x="877" y="202">TENNIS</text>
+    <rect x="812" y="230" width="130" height="56" fill="#f1efe8"/><text x="877" y="272">NFL</text>
+    <rect x="812" y="300" width="130" height="56" fill="#f1efe8"/><text x="877" y="342">NBA</text>
+  </g>
+  <g font-family="Big Shoulders Display" font-weight="700" font-size="30" fill="#e9e7e0">
+    <text x="962" y="200">MATCHES</text><text x="962" y="270">PROPS</text><text x="962" y="340">ASSISTS</text>
+  </g>
+  <path d="M64 500h1072" stroke="#e7b53c" stroke-width="3"/>
+  <text x="64" y="568" font-family="Archivo" font-size="28" fill="#aeb3ba">dayshawnterry.com</text>
+  <circle cx="1122" cy="558" r="10" fill="#e5483a"/>
+</svg>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Add Project"
+  short_description: "Add a completed project to the portfolio content"
+  default_prompt: "Use $add-project to add a completed project to src/content.ts, following the portfolio content rules."

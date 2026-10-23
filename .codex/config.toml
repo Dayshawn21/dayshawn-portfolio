@@ -1,0 +1,9 @@
+# Project MCP servers for Codex. Keep in sync with .mcp.json (Claude Code).
+
+[mcp_servers.playwright]
+command = "cmd"
+args = ["/c", "npx", "-y", "@playwright/mcp@latest"]
+
+[mcp_servers.context7]
+command = "cmd"
+args = ["/c", "npx", "-y", "@upstash/context7-mcp@latest"]

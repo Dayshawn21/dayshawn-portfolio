@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.impeccable/review/
+*.tar.gz
+.env
+.env.local
+.preview/
+.playwright-mcp/

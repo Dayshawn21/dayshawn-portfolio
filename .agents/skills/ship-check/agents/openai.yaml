@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ship Check"
+  short_description: "Run the portfolio pre-release checks"
+  default_prompt: "Use $ship-check to run the pre-release checks and report a pass/fail table."
