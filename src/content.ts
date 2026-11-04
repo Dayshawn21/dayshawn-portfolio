@@ -251,7 +251,7 @@ export const lineScore = {
   team: 'Visualutions',
   period: '2021–26',
   role: 'Front-end developer',
-  caption: 'Professional frontend experience. Figures from my résumé.',
+  caption: 'Figures from my résumé.',
   figures: [
     { value: '30', label: 'Saber modules' },
     { value: '55+', label: 'Reusable components' },

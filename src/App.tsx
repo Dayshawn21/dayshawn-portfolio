@@ -211,13 +211,6 @@ export default function App() {
               </ul>
             </section>
           </div>
-          <div className="line-score-frame">
-            <table className="line-score">
-              <caption>{lineScore.caption} <a className="line-score-link" href="#experience">See my experience<Icon name="arrow-down" /></a></caption>
-              <thead><tr><td /><th scope="col">Years</th>{lineScore.figures.map(figure => <th scope="col" key={figure.label}>{figure.label}</th>)}</tr></thead>
-              <tbody><tr><th scope="row">{lineScore.team}<span className="line-score-role">{lineScore.role}</span></th><td className="line-score-period" data-label="Years">{lineScore.period}</td>{lineScore.figures.map(figure => <td key={figure.label} data-label={figure.label}>{figure.value}</td>)}</tr></tbody>
-            </table>
-          </div>
         </section>
 
         <section className="work container" id="work" aria-label="Independent projects">
@@ -234,9 +227,17 @@ export default function App() {
 
         <section className="experience container" id="experience" aria-labelledby="experience-title">
           <div className="section-intro experience-intro"><h2 className="board-title" id="experience-title">Experience</h2><p>Enterprise software taught me to think beyond the screen: permissions, performance, edge cases, and the people doing the work.</p></div>
-          {experience.map(job => (
-            <div className="job" key={`${job.employer}-${job.period}`}>
-              <div className="job-summary"><h3>{job.employer}</h3><p className="job-role">{job.role}</p><p className="job-period">{job.period}</p><p className="job-description">{job.introduction}</p><a className="text-link" href={profile.resume} download>Full experience<Icon name="download" /></a></div>
+          {experience.map(job => { const hasScore = job.employer === lineScore.team; return (
+            <div className="job-block" key={`${job.employer}-${job.period}`}>
+              {hasScore && <div className="line-score-frame">
+                <table className="line-score">
+                  <caption>{lineScore.caption}</caption>
+                  <thead><tr><td /><th scope="col">Years</th>{lineScore.figures.map(figure => <th scope="col" key={figure.label}>{figure.label}</th>)}</tr></thead>
+                  <tbody><tr><th scope="row">{lineScore.team}<span className="line-score-role">{lineScore.role}</span></th><td className="line-score-period" data-label="Years">{lineScore.period}</td>{lineScore.figures.map(figure => <td key={figure.label} data-label={figure.label}>{figure.value}</td>)}</tr></tbody>
+                </table>
+              </div>}
+            <div className="job">
+              <div className="job-summary"><h3 className={hasScore ? 'sr-only' : undefined}>{job.employer}</h3><p className={`job-role${hasScore ? ' sr-only' : ''}`}>{job.role}</p><p className={`job-period${hasScore ? ' sr-only' : ''}`}>{job.period}</p><p className="job-description">{job.introduction}</p><a className="text-link" href={profile.resume} download>Full experience<Icon name="download" /></a></div>
               <table className="box-score">
                 <caption className="sr-only">Products I worked on at {job.employer}</caption>
                 <thead><tr><th scope="col">Product</th><th scope="col">Area</th><th scope="col">Stack</th></tr></thead>
@@ -248,7 +249,8 @@ export default function App() {
                 ))}
               </table>
             </div>
-          ))}
+            </div>
+          ); })}
         </section>
 
         <section className="about" id="about" aria-labelledby="about-title">

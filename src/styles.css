@@ -114,12 +114,10 @@ h1 { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; 
 .board-slot:hover .slot-name { color: var(--color-gold); }
 .slot-tagline { font-size: 14px; line-height: 1.35; color: var(--color-chalk); }
 
-.line-score-frame { margin-top: 24px; }
+.line-score-frame { margin-top: 48px; }
+.line-score-frame + .job { margin-top: 40px; border-top: 0; padding-top: 0; }
 .line-score { width: calc(100% + 16px); margin-inline: -8px; border-collapse: separate; border-spacing: 8px 0; table-layout: fixed; caption-side: bottom; }
 .line-score caption { text-align: left; padding: 10px 8px 0; font-size: 14px; color: var(--color-chalk); }
-.line-score-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; margin-left: 10px; font-weight: 650; color: var(--color-gold); text-decoration: underline; text-underline-offset: 3px; }
-.line-score-link svg { width: 16px; height: 16px; }
-.line-score-link:hover { color: var(--color-paint); }
 .line-score-role { display: block; margin-top: 6px; font-family: 'Archivo Variable', 'Arial Narrow', sans-serif; font-size: 15px; font-weight: 600; text-transform: none; letter-spacing: 0; color: var(--color-enamel-muted); }
 .line-score thead th { padding: 0 2px 8px; text-align: left; vertical-align: bottom; font-family: var(--font-display); font-size: 18px; font-weight: 650; text-transform: uppercase; letter-spacing: .04em; color: var(--color-chalk); border-bottom: 2px solid var(--color-gold); }
 .line-score thead td { border-bottom: 2px solid var(--color-gold); }
