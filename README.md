@@ -1,6 +1,6 @@
 # Dayshawn Terry's portfolio
 
-A static React + TypeScript portfolio featuring SportApp and professional frontend experience. Built with Vite, custom CSS, and self-hosted Source Sans 3 / Source Serif 4 fonts. The production HTML is prerendered, so all substantive content is readable before JavaScript loads.
+A static React + TypeScript portfolio featuring Lineform and professional frontend experience. Built with Vite, custom CSS, and self-hosted Source Sans 3 / Source Serif 4 fonts. The production HTML is prerendered, so all substantive content is readable before JavaScript loads.
 
 ## Run locally
 
@@ -54,7 +54,7 @@ No browser surface was available in the build environment. Rendered desktop/tabl
 ## Content sources
 
 - User-supplied Dayshawn Terry resume, reviewed October 16, 2026.
-- [SportApp explanation](https://sportapp-web-7v3r.onrender.com/#/how-it-works), public deployed copy inspected October 16, 2026.
-- [SportApp repository](https://github.com/Dayshawn21/TennisPredictor), public README and manifests; may lag the live application.
+- [Lineform explanation](https://sportapp-web-7v3r.onrender.com/#/how-it-works), public deployed copy inspected October 16, 2026.
+- [Lineform repository](https://github.com/Dayshawn21/Sports-Baseline), public README and manifests; may lag the live application.
 
 Old portfolio projects are intentionally excluded. No predictive-success claims, testimonials, internal company screenshots, or private company source code are included.

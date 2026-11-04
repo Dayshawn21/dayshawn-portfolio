@@ -38,8 +38,8 @@ A one-page static React 19 + TypeScript portfolio built with Vite. There is no r
 
 From `PRODUCT.md` and `README.md`:
 
-- Audience: recruiters and engineering hiring managers. Present employment as professional **frontend** experience; do not recast it as full-stack. SportApp is the independent full-stack project.
-- SportApp is the only independent project. Projects from the old portfolio are intentionally excluded.
+- Audience: recruiters and engineering hiring managers. Present employment as professional **frontend** experience; do not recast it as full-stack. Lineform is the independent full-stack project.
+- Independent projects: Lineform (featured; repo Sports-Baseline, formerly called SportApp), hennessy-aws-demo, and sports-analyst-agent. Projects from the old portfolio are intentionally excluded.
 - Make no predictive-success or profitability claims, and add no testimonials, internal company screenshots, or private source code.
 - `public/Dayshawn_Terry_Resume.pdf` must stay byte-for-byte identical to the supplied original. Replace it only with a new original.
 - Accessibility requirements: semantic landmarks, visible focus, keyboard navigation, reduced motion, and WCAG AA contrast.

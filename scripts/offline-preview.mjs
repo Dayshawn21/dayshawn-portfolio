@@ -26,10 +26,10 @@ if (!script.includes(originalResume)) throw new Error('The offline resume refere
 script = script.replaceAll(originalResume, JSON.stringify(resume));
 html = html.replaceAll('href="/Dayshawn_Terry_Resume.pdf"', `href="${resume}"`);
 
-// Same treatment for the SportApp screenshots, which content.ts references by path.
-for (const file of ['sportapp-how-it-works.png', 'sportapp-how-it-works-mobile.png']) {
+// Same treatment for the project screenshots, which content.ts references by path.
+for (const file of ['lineform-how-it-works.png', 'lineform-how-it-works-mobile.png', 'sports-analyst-agent.jpg']) {
   const screenshotPath = `/${file}`;
-  const screenshot = `data:image/png;base64,${(await readFile(path.join(dist, file))).toString('base64')}`;
+  const screenshot = `data:image/${file.endsWith('.jpg') ? 'jpeg' : 'png'};base64,${(await readFile(path.join(dist, file))).toString('base64')}`;
   if (!script.includes(JSON.stringify(screenshotPath))) throw new Error(`The offline reference to ${file} could not be located in the build.`);
   script = script.replaceAll(JSON.stringify(screenshotPath), JSON.stringify(screenshot));
   html = html.replaceAll(`src="${screenshotPath}"`, `src="${screenshot}"`).replaceAll(`srcSet="${screenshotPath}"`, `srcSet="${screenshot}"`).replaceAll(`srcset="${screenshotPath}"`, `srcset="${screenshot}"`);

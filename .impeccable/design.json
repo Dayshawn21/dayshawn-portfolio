@@ -292,7 +292,7 @@
       "kind": "button",
       "refersTo": "button-primary",
       "description": "Gold action plate with enamel-ink board lettering; hover turns enamel, press burnishes.",
-      "html": "<a class=\"ds-btn\" href=\"#work\">View SportApp<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M12 5v14m-6-6 6 6 6-6\"/></svg></a>",
+      "html": "<a class=\"ds-btn\" href=\"#work\">View Lineform<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M12 5v14m-6-6 6 6 6-6\"/></svg></a>",
       "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:54px;padding:12px 24px 10px;border-radius:0;text-decoration:none;font-family:'Big Shoulders Display Variable','Arial Narrow',sans-serif;font-size:23px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;background:var(--color-gold,#e7b53c);color:var(--color-enamel-ink,#15181c);transition:background 180ms,color 180ms;}.ds-btn:hover{background:var(--color-enamel,#f1efe8);}.ds-btn:active{background:var(--color-gold-deep,#c99a22);}.ds-btn>svg{transition:transform 180ms cubic-bezier(.16,1,.3,1);}@media(hover:hover) and (pointer:fine){.ds-btn:is(:hover,:focus-visible)>svg{transform:translateY(2px);}}.ds-btn:focus-visible,.ds-outline:focus-visible,.ds-link:focus-visible,.ds-nav a:focus-visible,.ds-stage:focus-visible{outline:3px solid var(--color-gold,#e7b53c);outline-offset:4px;}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}"
     },
     {
@@ -308,7 +308,7 @@
       "kind": "custom",
       "refersTo": "text-link",
       "description": "Archivo secondary link in board paint; hover turns gold and underlines.",
-      "html": "<a class=\"ds-link\" href=\"#case-study\">See how SportApp works<svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M7 17 17 7M8 7h9v9\"/></svg></a>",
+      "html": "<a class=\"ds-link\" href=\"#case-study\">See how Lineform works<svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M7 17 17 7M8 7h9v9\"/></svg></a>",
       "css": ".ds-link{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-family:'Archivo Variable','Arial Narrow',sans-serif;font-size:17px;font-weight:650;text-decoration:none;color:var(--color-paint,#e9e7e0);text-decoration-thickness:2px;text-underline-offset:6px;}.ds-link:hover{color:var(--color-gold,#e7b53c);text-decoration:underline;}.ds-link>svg{transition:transform 180ms cubic-bezier(.16,1,.3,1);}@media(hover:hover) and (pointer:fine){.ds-link:is(:hover,:focus-visible)>svg{transform:translate(2px,-2px);}}.ds-btn:focus-visible,.ds-outline:focus-visible,.ds-link:focus-visible,.ds-nav a:focus-visible,.ds-stage:focus-visible{outline:3px solid var(--color-gold,#e7b53c);outline-offset:4px;}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}"
     },
     {
@@ -332,7 +332,7 @@
       "kind": "custom",
       "refersTo": "enamel-tile",
       "description": "Signature tile: enamel with board-ink lettering, seated by the slot ring; hero tiles drop into place once on load.",
-      "html": "<h2 class=\"ds-tile\">SportApp</h2>",
+      "html": "<h2 class=\"ds-tile\">Lineform</h2>",
       "css": ".ds-tile{display:inline-block;margin:6px;background:var(--color-enamel,#f1efe8);color:var(--color-enamel-ink,#15181c);font-family:'Big Shoulders Display Variable','Arial Narrow',sans-serif;font-size:clamp(2.6rem,4.4vw,3.75rem);font-weight:800;line-height:1;text-transform:uppercase;letter-spacing:.01em;padding:.12em .3em .08em;border-radius:0;box-shadow:0 0 0 4px var(--color-slot,#0e1013);animation:ds-tile-drop 620ms cubic-bezier(.16,1,.3,1) both;}@keyframes ds-tile-drop{from{transform:translateY(-18px);}to{transform:translateY(0);}}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}"
     },
     {

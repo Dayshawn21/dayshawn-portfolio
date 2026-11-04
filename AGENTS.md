@@ -16,7 +16,7 @@ for optional tool settings.
 Dayshawn Terry's one-page portfolio for frontend and full-stack software
 engineering roles. It is a static React 19 + TypeScript + Vite site with custom
 CSS, prerendered at build time so content is readable before JavaScript loads. It
-features SportApp (independent full-stack project) and professional frontend
+features Lineform (independent full-stack project) and professional frontend
 experience. See `PRODUCT.md` for the product brief and `DESIGN.md` for the design
 system.
 

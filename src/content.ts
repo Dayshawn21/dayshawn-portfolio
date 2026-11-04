@@ -5,9 +5,10 @@ export const profile = {
   github: 'https://github.com/Dayshawn21',
   linkedin: 'https://linkedin.com/in/dayshawn-terry',
   resume: '/Dayshawn_Terry_Resume.pdf',
+  location: 'Houston, TX or remote',
   year: 2026,
   introduction:
-    'I’m Dayshawn, a software engineer with 4+ years of experience turning complex workflows into clear, usable interfaces. I bring that frontend foundation to the full stack.',
+    'I’m Dayshawn, a software engineer with 5 years of frontend experience turning complex workflows into clear, usable interfaces. I bring that foundation to the full stack.',
 };
 
 export type PipelineIcon = 'calendar' | 'layers' | 'model' | 'check' | 'screen';
@@ -20,53 +21,46 @@ export interface PipelineStage {
   description: string;
 }
 
-export interface Sport {
-  name: string;
-  label: string;
-}
-
 export interface Project {
   id: string;
   name: string;
+  tagline: string;
+  boardTag: string;
   summary: string;
-  status: string;
   role: string;
   technologies: string[];
   liveUrl: string;
   sourceUrl?: string;
   explanationUrl?: string;
   caseStudyIntroduction: string;
-  sports: Sport[];
-  screenshot?: { src: string; mobileSrc: string; alt: string; caption: string; width: number; height: number };
+  screenshot?: { src: string; mobileSrc: string; alt: string; caption: string; width: number; height: number; mobileWidth: number; mobileHeight: number };
   pipeline: PipelineStage[];
   decisions: { area: string; description: string; lesson: string }[];
 }
 
 export const projects: Project[] = [
   {
-    id: 'sportapp',
-    name: 'SportApp',
+    id: 'lineform',
+    name: 'Lineform',
+    tagline: 'Tennis, NFL, NBA & NHL research platform',
+    boardTag: 'Full stack',
     summary:
       'A sports analytics and research platform that brings schedules, statistics, market odds, and model evaluation into one place.',
-    status: 'In active development',
     role: 'Independent full-stack development',
-    technologies: ['React', 'TypeScript', 'Python', 'FastAPI', 'PostgreSQL'],
+    technologies: ['React', 'TypeScript', 'Python', 'FastAPI', 'PostgreSQL', 'Claude API'],
     liveUrl: 'https://sportapp-web-7v3r.onrender.com/#/',
-    sourceUrl: 'https://github.com/Dayshawn21/TennisPredictor',
+    sourceUrl: 'https://github.com/Dayshawn21/Sports-Baseline',
     explanationUrl: 'https://sportapp-web-7v3r.onrender.com/#/how-it-works',
-    caseStudyIntroduction: 'I built SportApp’s frontend, backend, and data workflows. These are a few of the decisions behind the product.',
-    sports: [
-      { name: 'Tennis', label: 'Match probabilities' },
-      { name: 'NFL', label: 'Props & game lines' },
-      { name: 'NBA', label: 'Assist projections' },
-    ],
+    caseStudyIntroduction: 'I built Lineform’s frontend, backend, and data workflows. These are a few of the decisions behind the product.',
     screenshot: {
-      src: '/sportapp-how-it-works.png',
-      mobileSrc: '/sportapp-how-it-works-mobile.png',
-      alt: 'SportApp’s How it works page, describing what the app does and how its data flows.',
-      caption: 'SportApp’s public How it works page, October 2026.',
-      width: 720,
-      height: 656,
+      src: '/lineform-how-it-works.png',
+      mobileSrc: '/lineform-how-it-works-mobile.png',
+      alt: 'The How data flows list from Lineform’s How it works page: scheduled jobs collect data, providers’ names are matched, models produce probabilities, predictions are graded after events, and the web app shows each model’s track record.',
+      caption: 'How data flows, from Lineform’s public How it works page, November 2026.',
+      width: 674,
+      height: 338,
+      mobileWidth: 460,
+      mobileHeight: 426,
     },
     pipeline: [
       {
@@ -75,7 +69,7 @@ export const projects: Project[] = [
         icon: 'calendar',
         heading: 'Collect on a schedule.',
         description:
-          'Scheduled jobs gather schedules, box scores, sportsbook odds, and prop lines for tennis, the NFL, and the NBA. The pipeline brings external data into a repeatable workflow.',
+          'Seventeen scheduled GitHub Actions jobs gather schedules, box scores, sportsbook odds, and prop lines from 8+ providers for tennis, the NFL, the NBA, and the NHL.',
       },
       {
         name: 'Unify',
@@ -114,21 +108,87 @@ export const projects: Project[] = [
       {
         area: 'Query performance',
         description:
-          'An N+1 query pattern was causing endpoint timeouts. I traced the repeated database work and replaced it with batched queries, addressing the timeout issue at the data-access layer.',
+          'An N+1 query pattern was causing endpoint timeouts. I replaced it with batched queries, and moved heavy report builds into scheduled jobs so the API stays within a 512 MB host.',
         lesson: 'A responsive interface starts with understanding what happens behind the API.',
       },
       {
         area: 'Data quality',
         description:
-          'I built the FastAPI backend, PostgreSQL data model, and scheduled ingestion jobs alongside the React client. An admin console helps identify data-quality issues, while shared player and event identities make comparisons across providers possible.',
+          'I built the FastAPI backend and a 50-migration PostgreSQL schema alongside the React client. Shared player and event identities make providers comparable, and about 5,600 automated tests run in CI.',
         lesson: 'Collecting data is only the beginning. Keeping it coherent is part of the product.',
       },
       {
         area: 'Model evaluation',
         description:
-          'I built walk-forward validation tracking log-loss, Brier score, and AUC, with probability calibration. The app tests new signals on unseen events and turns picks off when the evidence does not support them.',
+          'I validated every model on held-out seasons, including 12,068 tennis matches, under evaluation rules written before the data was read. The app withholds predictions when the evidence does not support them.',
         lesson: 'An honest model track record is more useful than an impressive-looking prediction.',
       },
+      {
+        area: 'AI assistant',
+        description:
+          'Ask Lineform answers questions about the app’s data in plain English. I wrote its Claude tool loop by hand, and a 30-question evaluation checks that every number in an answer comes from the app’s own data.',
+        lesson: 'An assistant is only as trustworthy as the data it is allowed to quote.',
+      },
+    ],
+  },
+];
+
+export interface SideProject {
+  id: string;
+  name: string;
+  tagline: string;
+  boardTag: string;
+  summary: string;
+  technologies: string[];
+  highlights: string[];
+  liveUrl: string;
+  sourceUrl: string;
+  screenshot?: { src: string; alt: string; width: number; height: number };
+  architecture?: { label: string; steps: string[] }[];
+}
+
+export const moreProjects: SideProject[] = [
+  {
+    id: 'sports-analyst-agent',
+    name: 'Sports Analyst Agent',
+    tagline: 'AI agent with live sports data',
+    boardTag: 'AI',
+    summary:
+      'I built a chat app where Claude answers sports questions with live data. It decides which standings, scores, or schedules to fetch, calls the tool, and explains the result.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind', 'Anthropic SDK', 'Zod'],
+    highlights: [
+      'An agent loop lets Claude choose and chain tool calls across the NBA, NFL, MLB, and NHL, capped at six steps per answer.',
+      'Responses stream as typed events, so the interface shows each data fetch as a live status ticker while the text arrives.',
+      'Zod validates the data source’s responses and Claude’s tool arguments, and the chat route is rate-limited with an optional shared Redis store.',
+    ],
+    liveUrl: 'https://sports-analyst-agent.vercel.app',
+    sourceUrl: 'https://github.com/Dayshawn21/sports-analyst-agent',
+    screenshot: {
+      src: '/sports-analyst-agent.jpg',
+      alt: 'Sports Analyst Agent answering “How have the 76ers looked lately?”, with tickers showing it fetched the NBA schedule and standings before replying.',
+      width: 592,
+      height: 262,
+    },
+  },
+  {
+    id: 'hennessy-aws-demo',
+    name: 'Photography site on AWS',
+    tagline: 'Serverless booking demo on AWS',
+    boardTag: 'Cloud',
+    summary:
+      'I built a demo React site for a photography business on AWS, using placeholder images. Inquiries and booking requests go through a serverless API, and an admin dashboard sits behind a login.',
+    technologies: ['React', 'TypeScript', 'AWS Lambda', 'DynamoDB', 'Cognito', 'CloudFront'],
+    highlights: [
+      'The static build is served from a private S3 bucket through CloudFront with Origin Access Control, and API Gateway routes requests to TypeScript Lambda functions, each with its own IAM role.',
+      'A single DynamoDB transaction books a time slot only if it is still open. A parallel-request test confirmed exactly one booking succeeds.',
+      'Admin routes use Cognito login with a JWT authorizer, and the Lambda checks group membership again before confirming or declining requests.',
+    ],
+    liveUrl: 'https://d3vxtn9s8u8bor.cloudfront.net',
+    sourceUrl: 'https://github.com/Dayshawn21/hennessy-aws-demo',
+    architecture: [
+      { label: 'Site', steps: ['CloudFront', 'Private S3'] },
+      { label: 'API', steps: ['API Gateway', 'Lambda', 'DynamoDB'] },
+      { label: 'Admin', steps: ['Cognito', 'JWT authorizer', 'Lambda'] },
     ],
   },
 ];
@@ -152,25 +212,26 @@ export const experience: Experience[] = [
     role: 'Front-End Developer',
     period: 'October 2021 – October 2026',
     introduction:
-      'Building enterprise web applications for complex analytics, compliance, and practice-management workflows.',
+      'Built enterprise React and TypeScript applications for healthcare analytics, compliance, and practice-management workflows.',
     work: [
       {
         name: 'Saber',
-        context: 'Analytics & compliance',
+        context: 'Healthcare analytics & compliance',
         technologies: 'React / TypeScript',
         highlights: [
-          'Primary author of an application spanning 30 modules, with 55+ reusable UI components and a shared validation framework.',
-          'Integrated 230+ REST API endpoints, OIDC single sign-on, and permission-driven navigation.',
-          'Delivered live progress updates with SignalR and Redux, plus streaming exports to reduce browser memory usage.',
+          'Sole front-end developer, alongside one backend developer, on a 30-module application serving 400+ users across 50 tenants. I owned the front-end architecture, conventions, code-quality standards, and end-to-end and integration tests.',
+          'Built 55+ reusable UI components and an 18-rule validation framework shared by all 30 modules, and integrated 230+ REST API endpoints behind OIDC single sign-on.',
+          'Implemented permission-driven navigation for 50+ access controls, live progress updates with SignalR and Redux, and streaming exports so 100K+ row reports download without overloading browser memory.',
         ],
       },
       {
         name: 'Dental practice platform',
-        context: 'Patient, financial & reporting workflows',
-        technologies: 'React / Power BI Embedded',
+        context: 'Used by 100+ dental offices',
+        technologies: 'React / Redux Toolkit',
         highlights: [
-          'Developed data-heavy reporting interfaces for a platform spanning 60+ report types, and independently built three federal report tables.',
-          'Implemented coordination of benefits for four ranked payers, introducing the workflow behind a feature flag.',
+          'One of four original front-end developers, joining before launch and gathering requirements directly from customers.',
+          'Built report pages with shared filter, table, and CSV export components, plus role-based admin pages for users, locations, providers, fee schedules, and insurance plans.',
+          'Built the UI for three federal UDS clinical measures tables and four-payer coordination of benefits, behind a feature flag.',
         ],
       },
       {
@@ -178,7 +239,7 @@ export const experience: Experience[] = [
         context: 'Practice management',
         technologies: 'Blazor / C# / .NET',
         highlights: [
-          'Led development of a practice-management module within a 15-contributor solution.',
+          'Developed a practice-management module within a 15-contributor solution.',
           'Aligned menu visibility with route authorization, added access-behavior tests, and independently implemented a versioned EDI encoder.',
         ],
       },
@@ -189,26 +250,31 @@ export const experience: Experience[] = [
 export const lineScore = {
   team: 'Visualutions',
   period: '2021–26',
-  caption: 'Figures from my résumé.',
+  role: 'Front-end developer',
+  caption: 'Professional frontend experience. Figures from my résumé.',
   figures: [
     { value: '30', label: 'Saber modules' },
     { value: '55+', label: 'Reusable components' },
     { value: '230+', label: 'API endpoints integrated' },
-    { value: '60+', label: 'Platform report types' },
+    { value: '400+', label: 'Saber users' },
   ],
 };
 
 export const skillGroups = [
   {
     title: 'Interfaces & interaction',
-    skills: ['React', 'TypeScript', 'JavaScript', 'Blazor', 'Redux Toolkit', 'HTML & SCSS', 'Accessibility'],
+    skills: ['React', 'TypeScript', 'JavaScript', 'Next.js', 'Redux Toolkit', 'TanStack Query', 'React Router', 'Blazor', 'Fluent UI', 'HTML & SCSS', 'Chart.js', 'Power BI Embedded'],
   },
   {
     title: 'Backend & data',
-    skills: ['Python', 'FastAPI', 'C# / .NET', 'PostgreSQL', 'SQL Server', 'SQLAlchemy', 'REST APIs'],
+    skills: ['Python', 'FastAPI', 'C# / .NET', 'PostgreSQL', 'SQL Server', 'SQLAlchemy', 'Alembic', 'REST APIs', 'SignalR & SSE', 'OAuth 2.0 / OIDC'],
+  },
+  {
+    title: 'Cloud & AI',
+    skills: ['Claude API: tool use, streaming, evals', 'Claude Code', 'AWS Lambda', 'API Gateway', 'DynamoDB', 'S3 & CloudFront', 'IAM', 'CloudWatch'],
   },
   {
     title: 'Testing & delivery',
-    skills: ['Vitest', 'React Testing Library', 'Pytest', 'GitHub Actions', 'Azure DevOps', 'Git'],
+    skills: ['Playwright', 'Vitest', 'React Testing Library', 'Pytest', 'GitHub Actions', 'Azure DevOps', 'Vite', 'Git'],
   },
 ];

@@ -12,7 +12,7 @@ Items 1-9 were already shipped when the project adopted the Blueprint (2026-10-1
 - [x] 1. **Typed content model and page shell** - profile, projects, experience, and skills in `src/content.ts`, rendered by a single-page `App` with semantic landmarks
 - [x] 2. **Sticky header with active-section highlighting** - in-page navigation that tracks the visible section (`useActiveSection`)
 - [x] 3. **Introduction** - headline and positioning statement
-- [x] 4. **Featured SportApp project** - summary, status, role, technologies, and live/source/explanation links
+- [x] 4. **Featured Lineform project** - summary, status, role, technologies, and live/source/explanation links
 - [x] 5. **Interactive architecture pipeline and case study** - selectable pipeline stages with animated connectors and explanations, plus engineering decisions
 - [x] 6. **Experience, about, and skills** - Visualutions work, education, and grouped skills
 - [x] 7. **Contact, resume download, and footer** - email, LinkedIn, GitHub, unchanged resume PDF

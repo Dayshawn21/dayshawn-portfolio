@@ -25,7 +25,7 @@ Collect these from the user or from public sources they point to (live site, pub
 - No predictive-success, accuracy, or profitability claims; no testimonials; no internal company screenshots or private source code.
 - Keep professional employment framed as frontend experience. Only independent projects are described as full-stack.
 - `id` must be unique and URL-safe, since it is used for element ids.
-- Match the tone and length of the existing SportApp entry.
+- Match the tone and length of the existing Lineform entry.
 
 ## Finish
 

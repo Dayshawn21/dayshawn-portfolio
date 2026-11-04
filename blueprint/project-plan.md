@@ -9,10 +9,10 @@
 Dayshawn Terry is looking for frontend and full-stack software engineering roles.
 Recruiters and hiring managers need to evaluate his engineering experience and
 independent full-stack work quickly. The portfolio makes that easy: it leads with
-real work, explains the engineering behind SportApp, and gets visitors to the
+real work, explains the engineering behind Lineform, and gets visitors to the
 resume and contact details.
 
-Success means visitors understand his strengths, explore SportApp, download the
+Success means visitors understand his strengths, explore Lineform, download the
 resume, and get in touch.
 
 ## 2. Users - Who is this for?
@@ -20,7 +20,7 @@ resume, and get in touch.
 - Recruiters screening candidates, often scanning on a phone.
 - Engineering hiring managers evaluating depth, usually on desktop.
 
-Visitors may arrive while the external SportApp demo is down, so the portfolio
+Visitors may arrive while the external Lineform demo is down, so the portfolio
 itself must carry enough project context.
 
 ## 3. Features - What does the MVP need?
@@ -29,7 +29,7 @@ All of these already exist:
 
 - Sticky header with in-page navigation and active-section highlighting
 - Introduction with positioning statement
-- Featured SportApp project: summary, role, technologies, live/source/explanation links
+- Featured Lineform project: summary, role, technologies, live/source/explanation links
 - Interactive architecture pipeline (Collect, Unify, Model, Evaluate, Explore)
 - Case study of key engineering decisions
 - Professional experience (Visualutions: Saber, dental practice platform, Beacon)
@@ -76,9 +76,9 @@ motion, and WCAG AA contrast.
 
 Content rules:
 
-- Present employment as professional frontend experience; only independent projects (SportApp) are framed as full-stack.
+- Present employment as professional frontend experience; only independent projects (Lineform) are framed as full-stack.
 - Make no predictive-success or profitability claims, and include no testimonials, internal company screenshots, or private source code.
-- Projects from the old portfolio are excluded. Link to SportApp rather than embedding it.
+- Projects from the old portfolio are excluded. Link to Lineform rather than embedding it.
 
 ## 8. Deployment - Where and how will this ship?
 

@@ -207,7 +207,7 @@ Rivet heads use a fixed flat grey (#434a53) inside their data-URI SVG; it is par
 ### Hierarchy
 - **Display** (850, `clamp(4.25rem, 9vw, 10rem)`, 0.86): the name, one word per enamel tile. On phones (560px) it becomes `clamp(3.2rem, 17.5vw, 5.4rem)`.
 - **Closing** (900, `clamp(2.9rem, 5vw, 4.5rem)`, 0.92): the Contact headline on the gold band.
-- **Headline** (800, `clamp(2.6rem, 4.4vw, 3.75rem)`, 1): section titles set on a single enamel tile (SportApp, Experience, About).
+- **Headline** (800, `clamp(2.6rem, 4.4vw, 3.75rem)`, 1): section titles set on a single enamel tile (Lineform, Experience, About).
 - **Figure** (800, `clamp(2.6rem, 4.6vw, 4.25rem)`, 1, tabular): gold numerals in line-score slots. Larger painted names use the same voice: now-posting title (64px), job employer (42px), case-study title (`clamp(2rem, 3vw, 2.5rem)`), pipeline index (56px).
 - **Title** (850, 30px, 1): decision names; stage names (28px, 800), box-score product names (34px), skill group names (27px) and pipeline heading (40px) sit in this band.
 - **Action** (800, 23px, .04em, uppercase): primary plate and header contact (21px, 700).

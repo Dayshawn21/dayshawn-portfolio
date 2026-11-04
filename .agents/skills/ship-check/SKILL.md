@@ -16,4 +16,4 @@ Run each step in order from the project root, stop at the first failure, and rep
 4. **Social image**: `dist/social-card.png` must be 1200 × 630 (read the PNG IHDR width/height at byte offsets 16 and 20).
 5. **Canonical URL**: `dist/index.html` keeps `https://www.dayshawnterry.com/` as the canonical URL.
 6. **Offline preview**: `npm run preview:offline`, then confirm `.preview/index.html` exists.
-7. **Browser check (if the Playwright MCP server is available)**: run `npm run preview`, open the printed address, and capture screenshots at 375, 768, and 1280 px widths. Tab through the page to confirm visible focus, and click each SportApp pipeline stage. Report any console errors, especially hydration mismatches.
+7. **Browser check (if the Playwright MCP server is available)**: run `npm run preview`, open the printed address, and capture screenshots at 375, 768, and 1280 px widths. Tab through the page to confirm visible focus, and click each Lineform pipeline stage. Report any console errors, especially hydration mismatches.
