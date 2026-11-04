@@ -46,4 +46,8 @@ From `PRODUCT.md` and `README.md`:
 
 ## Hosting
 
-The hosting identity is recorded in `.openai/hosting.json`. Reuse it and don't create another site. Uploading a hosted preview requires explicit user authorization. Don't change the existing `dayshawnterry.com` deployment or its DNS without the user's direction.
+Production runs on Vercel: project `dayshawn-portfolio` (team `dayshawn21s-projects`) builds the `master` branch of `github.com/Dayshawn21/dayshawn-portfolio` using `vercel.json` (`npm ci`, `npm run build`, output `dist`). Pushing to `master` deploys to production; other branches get preview deployments.
+
+`www.dayshawnterry.com` is the primary domain; `dayshawnterry.com` 308-redirects to it. DNS already points at Vercel and needs no changes. The 2021 Vercel project `portfolio` is kept as a fallback and no longer has the custom domains.
+
+Pushing to `master`, changing Vercel project settings, and moving domains all require explicit user direction. `.openai/hosting.json` is an older OpenAI-hosted preview identity and is not the production host.
