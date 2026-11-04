@@ -192,7 +192,7 @@ export default function App() {
           <div className="intro-board">
             <div className="intro-main">
               <h1 id="intro-title"><span className="tile">Dayshawn</span> <span className="tile">Terry</span></h1>
-              <p className="intro-role">Software engineer · Frontend experience · Full-stack projects</p>
+              <p className="intro-role"><span className="role-part">Software engineer</span><span className="role-sep" aria-hidden="true"> · </span><span className="role-part">Frontend experience</span><span className="role-sep" aria-hidden="true"> · </span><span className="role-part">Full-stack projects</span></p>
               <p className="intro-copy">{profile.introduction}</p>
               <div className="intro-actions"><a className="button button-primary" href="#work">View projects<Icon name="arrow-down" /></a><a className="text-link resume-link" href={profile.resume} download><Icon name="download" />Download résumé</a></div>
               <p className="availability"><span className="lamp" aria-hidden="true" />Open to frontend &amp; full-stack roles · {profile.location}</p>

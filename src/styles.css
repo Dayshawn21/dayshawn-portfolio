@@ -79,7 +79,7 @@ svg { flex-shrink: 0; }
 .site-header { position: sticky; top: 0; z-index: 5; background: var(--color-board); border-bottom: 2px solid transparent; transition: border-color var(--duration-detail) var(--ease-out); }
 .site-header[data-scrolled] { border-bottom-color: var(--color-rule); }
 .header-inner { min-height: 84px; display: flex; align-items: center; gap: 40px; }
-.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; font-family: var(--font-display); font-size: 24px; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; }
+.brand { display: flex; align-items: center; gap: 14px; min-height: 44px; text-decoration: none; font-family: var(--font-display); font-size: 24px; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; }
 .brand-mark { display: grid; place-items: center; width: 44px; height: 44px; background: var(--color-enamel); color: var(--color-enamel-ink); font-size: 26px; font-weight: 900; letter-spacing: 0; box-shadow: 0 0 0 3px var(--color-slot); }
 nav { display: flex; gap: 6px; margin-left: auto; }
 nav a { position: relative; display: flex; align-items: center; gap: 9px; min-height: 44px; padding-inline: 14px; font-family: var(--font-display); font-size: 21px; font-weight: 650; text-transform: uppercase; letter-spacing: .04em; color: var(--color-chalk); text-decoration: none; transition: color var(--duration-feedback); }
@@ -293,8 +293,9 @@ a > svg[data-icon] { transition: transform var(--duration-feedback) var(--ease-o
   .pipeline-stage { padding-inline: 12px; }
   .pipeline-connector { right: -20px; width: 20px; }
   .stage-name { font-size: 24px; }
-  .decision { grid-template-columns: 1fr 1.4fr; }
-  .decision-lesson { grid-column: 2; }
+  .decision { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); row-gap: 20px; }
+  .decision h4 { grid-column: 1 / -1; }
+  .decision-lesson { grid-column: auto; }
   .contact-inner { gap: 48px; }
 }
 
@@ -365,6 +366,8 @@ a > svg[data-icon] { transition: transform var(--duration-feedback) var(--ease-o
   h1 { font-size: clamp(3.2rem, 17.5vw, 5.4rem); gap: 10px; }
   .tile { box-shadow: 0 0 0 4px var(--color-slot); }
   .intro-role { margin-top: 24px; font-size: 21px; }
+  .role-part { display: block; }
+  .role-sep { display: none; }
   .intro-copy { font-size: 17px; }
   .intro-actions .button { width: 100%; }
   .now-posting { padding: 22px 18px; }
