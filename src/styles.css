@@ -112,6 +112,7 @@ h1 { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; 
 .board-slot { display: grid; grid-template-columns: minmax(0, 1fr) 132px; grid-template-rows: minmax(0, 1fr) auto; height: 100%; min-height: 76px; background: var(--color-slot); border: 2px solid transparent; text-decoration: none; transition: border-color var(--duration-feedback); }
 .board-slot:hover { border-color: var(--color-gold); }
 .slot-thumb { grid-column: 1 / -1; min-height: 110px; overflow: hidden; border-bottom: 2px solid var(--color-rule); background: #000; }
+.slot-thumb picture { display: contents; }
 .slot-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: left top; transition: transform var(--duration-detail) var(--ease-out); }
 .board-slot:hover .slot-thumb img { transform: scale(1.03); }
 .slot-tag { display: grid; place-items: center; padding: 4px 10px 0; text-align: center; background: var(--color-enamel); color: var(--color-enamel-ink); font-family: var(--font-display); font-size: 22px; font-weight: 850; line-height: 1; text-transform: uppercase; letter-spacing: .03em; white-space: nowrap; }
@@ -391,7 +392,7 @@ a > svg[data-icon] { transition: transform var(--duration-feedback) var(--ease-o
   .now-posting { padding: 22px 18px; }
   .now-posting-title { font-size: 22px; }
   .board-slots { grid-template-columns: minmax(0, 1fr); }
-  .slot-thumb { height: 140px; }
+  .slot-thumb { display: none; }
   .board-slot { grid-template-columns: minmax(0, 1fr) 78px; min-height: 64px; }
   .slot-tag { padding-inline: 6px; font-size: 17px; white-space: normal; }
   .slot-name { font-size: 21px; }

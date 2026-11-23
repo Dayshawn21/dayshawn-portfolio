@@ -68,6 +68,9 @@ function Pipeline({ project }: { project: Project }) {
   );
 }
 
+// Phones hide the board thumbnails; this 1px source keeps them from downloading the real image.
+const blankImage = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
+
 const countWords = ['No', 'One', 'Two', 'Three', 'Four', 'Five', 'Six'];
 
 // Long detail collapses on phones only; on wider screens the toggle is hidden and the detail always shows.
@@ -203,7 +206,7 @@ export default function App() {
                 {boardProjects.map(project => (
                   <li key={project.id}>
                     <a className="board-slot" href={`#${project.id}`}>
-                      {'thumbnail' in project && project.thumbnail && <span className="slot-thumb" aria-hidden="true"><img src={project.thumbnail.src} srcSet={`${project.thumbnail.smallSrc} 640w, ${project.thumbnail.src} 920w`} sizes="(max-width: 560px) calc(100vw - 72px), (max-width: 1100px) 45vw, 460px" alt="" width={project.thumbnail.width} height={project.thumbnail.height} decoding="async" /></span>}
+                      {'thumbnail' in project && project.thumbnail && <span className="slot-thumb" aria-hidden="true"><picture><source media="(max-width: 560px)" srcSet={blankImage} /><img src={project.thumbnail.src} srcSet={`${project.thumbnail.smallSrc} 640w, ${project.thumbnail.src} 920w`} sizes="(max-width: 560px) calc(100vw - 72px), (max-width: 1100px) 45vw, 460px" alt="" width={project.thumbnail.width} height={project.thumbnail.height} decoding="async" /></picture></span>}
                       <span className="slot-text"><span className="slot-name">{project.name}</span><span className="slot-tagline">{project.tagline}</span></span>
                       <span className="slot-tag">{project.boardTag}</span>
                     </a>
