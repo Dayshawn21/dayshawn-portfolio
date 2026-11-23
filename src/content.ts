@@ -33,6 +33,7 @@ export interface Project {
   sourceUrl?: string;
   explanationUrl?: string;
   liveNote?: string;
+  thumbnail?: { src: string; smallSrc: string; width: number; height: number };
   caseStudyIntroduction: string;
   screenshot?: { src: string; mobileSrc: string; alt: string; caption?: string; width: number; height: number; mobileWidth: number; mobileHeight: number };
   pipeline: PipelineStage[];
@@ -52,17 +53,18 @@ export const projects: Project[] = [
     liveUrl: 'https://sportapp-web-7v3r.onrender.com/#/',
     sourceUrl: 'https://github.com/Dayshawn21/Sports-Baseline',
     explanationUrl: 'https://sportapp-web-7v3r.onrender.com/#/how-it-works',
+    thumbnail: { src: '/thumb-lineform.jpg', smallSrc: '/thumb-lineform-640.jpg', width: 920, height: 414 },
     liveNote: 'The live app can take a moment to load. If it’s unavailable, everything on this page still explains how it works.',
     caseStudyIntroduction: 'I built Lineform’s frontend, backend, and data workflows. These are a few of the decisions behind the product.',
     screenshot: {
       src: '/lineform-how-it-works.png',
-      mobileSrc: '/lineform-how-it-works-mobile.png',
+      mobileSrc: '/lineform-how-it-works-mobile.jpg',
       alt: 'Lineform’s top bar above the How data flows list from its How it works page: scheduled jobs collect data, providers’ names are matched, models produce probabilities, predictions are graded after events, and the web app shows each model’s track record.',
       caption: 'How data flows, from Lineform’s public How it works page, November 2026.',
       width: 760,
       height: 342,
-      mobileWidth: 430,
-      mobileHeight: 472,
+      mobileWidth: 645,
+      mobileHeight: 708,
     },
     pipeline: [
       {
@@ -145,6 +147,7 @@ export const projects: Project[] = [
     liveUrl: 'https://front-desk-board.vercel.app/',
     sourceUrl: 'https://github.com/Dayshawn21/front-desk-board',
     explanationUrl: 'https://github.com/Dayshawn21/front-desk-board/blob/main/docs/TOUR.md',
+    thumbnail: { src: '/thumb-front-desk-board.jpg', smallSrc: '/thumb-front-desk-board-640.jpg', width: 920, height: 486 },
     caseStudyIntroduction: 'Every patient, practice, and provider is invented. These are a few of the decisions behind the app.',
     screenshot: {
       src: '/front-desk-board.jpg',

@@ -203,6 +203,7 @@ export default function App() {
                 {boardProjects.map(project => (
                   <li key={project.id}>
                     <a className="board-slot" href={`#${project.id}`}>
+                      {'thumbnail' in project && project.thumbnail && <span className="slot-thumb" aria-hidden="true"><img src={project.thumbnail.src} srcSet={`${project.thumbnail.smallSrc} 640w, ${project.thumbnail.src} 920w`} sizes="(max-width: 560px) calc(100vw - 72px), (max-width: 1100px) 45vw, 460px" alt="" width={project.thumbnail.width} height={project.thumbnail.height} decoding="async" /></span>}
                       <span className="slot-text"><span className="slot-name">{project.name}</span><span className="slot-tagline">{project.tagline}</span></span>
                       <span className="slot-tag">{project.boardTag}</span>
                     </a>

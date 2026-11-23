@@ -27,12 +27,13 @@ script = script.replaceAll(originalResume, JSON.stringify(resume));
 html = html.replaceAll('href="/Dayshawn_Terry_Resume.pdf"', `href="${resume}"`);
 
 // Same treatment for the project screenshots, which content.ts references by path.
-for (const file of ['lineform-how-it-works.png', 'lineform-how-it-works-mobile.png', 'front-desk-board.jpg']) {
+for (const file of ['lineform-how-it-works.png', 'lineform-how-it-works-mobile.jpg', 'front-desk-board.jpg', 'front-desk-board-mobile.jpg', 'thumb-lineform.jpg', 'thumb-lineform-640.jpg', 'thumb-front-desk-board.jpg', 'thumb-front-desk-board-640.jpg']) {
   const screenshotPath = `/${file}`;
   const screenshot = `data:image/${file.endsWith('.jpg') ? 'jpeg' : 'png'};base64,${(await readFile(path.join(dist, file))).toString('base64')}`;
   if (!script.includes(JSON.stringify(screenshotPath))) throw new Error(`The offline reference to ${file} could not be located in the build.`);
   script = script.replaceAll(JSON.stringify(screenshotPath), JSON.stringify(screenshot));
-  html = html.replaceAll(`src="${screenshotPath}"`, `src="${screenshot}"`).replaceAll(`srcSet="${screenshotPath}"`, `srcSet="${screenshot}"`).replaceAll(`srcset="${screenshotPath}"`, `srcset="${screenshot}"`);
+  // Paths can sit inside a multi-candidate srcset; no listed path is a substring of another, so replace every occurrence.
+  html = html.replaceAll(screenshotPath, screenshot);
 }
 
 let css = await readFile(assetPath(styleTag[1]), 'utf8');
