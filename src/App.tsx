@@ -198,7 +198,7 @@ export default function App() {
               <p className="availability"><span className="lamp" aria-hidden="true" />Open to frontend &amp; full-stack roles · {profile.location}</p>
             </div>
             <section className="now-posting" aria-labelledby="now-posting-title">
-              <h2 className="now-posting-title" id="now-posting-title">On the board</h2>
+              <p className="now-posting-title" id="now-posting-title">On the board</p>
               <ul className="board-slots">
                 {boardProjects.map(project => (
                   <li key={project.id}>
@@ -218,7 +218,7 @@ export default function App() {
           {moreProjects.length > 0 && (
             <section className="more-projects" aria-labelledby="more-projects-title">
               <h2 className="board-title" id="more-projects-title">More projects</h2>
-              <div className="more-projects-grid">
+              <div className={`more-projects-grid${moreProjects.length === 1 ? ' is-single' : ''}`}>
                 {moreProjects.map(project => <SideProjectCard key={project.id} project={project} />)}
               </div>
             </section>
@@ -255,7 +255,7 @@ export default function App() {
 
         <section className="about" id="about" aria-labelledby="about-title">
           <div className="container">
-            <div className="about-intro"><h2 className="board-title" id="about-title">About</h2><div><p>I’m drawn to the work between complicated systems and the people using them. At Visualutions, that meant reusable interfaces, data-heavy dashboards, and business workflows that needed to work reliably.</p><p>In my own projects, I take that care through the full stack. Lineform runs from scheduled data jobs and database queries to a React interface and a Claude-powered assistant. Sports Analyst Agent puts LLM tool use on live data, and my photography demo runs a serverless booking flow on AWS.</p><p className="education">B.A., Computer Investigation and Criminal Justice<br /><span>St. Ambrose University</span></p></div></div>
+            <div className="about-intro"><h2 className="board-title" id="about-title">About</h2><div><p>I’m drawn to the work between complicated systems and the people using them. At Visualutions, that meant reusable interfaces, data-heavy dashboards, and business workflows that needed to work reliably.</p><p>In my own projects, I take that care through the full stack. Lineform runs from scheduled data jobs and database queries to a React interface and a Claude-powered assistant. Front Desk Board brings my enterprise habits to a scheduling demo: business rules as tested functions, role-based actions, and accessibility checked in CI.</p><p className="education">B.A., Computer Investigation and Criminal Justice<br /><span>St. Ambrose University</span></p></div></div>
             <div className="skills">{skillGroups.map(group => <section className="skill-group" key={group.title} aria-labelledby={`skills-${group.title.split(' ')[0].toLowerCase()}`}><h3 id={`skills-${group.title.split(' ')[0].toLowerCase()}`}>{group.title}</h3><ul>{group.skills.map(skill => <li key={skill}>{skill}</li>)}</ul></section>)}</div>
           </div>
         </section>

@@ -149,47 +149,27 @@ export interface SideProject {
 
 export const moreProjects: SideProject[] = [
   {
-    id: 'sports-analyst-agent',
-    name: 'Sports Analyst Agent',
-    tagline: 'AI agent with live sports data',
-    boardTag: 'AI',
+    id: 'front-desk-board',
+    name: 'Front Desk Board',
+    tagline: 'Dental front desk scheduling demo',
+    boardTag: 'Frontend',
     summary:
-      'I built a chat app where Claude answers sports questions with live data. It decides which standings, scores, or schedules to fetch, calls the tool, and explains the result.',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind', 'Anthropic SDK', 'Zod'],
+      'I built a scheduling board for the front desk of a fictional dental office: chairs as columns, patients moving from check-in to checkout, double-bookings flagged, and new visits booked with an optional AI assist. Every patient and practice is invented.',
+    technologies: ['React', 'TypeScript', 'TanStack Query', 'Tailwind', 'Claude API', 'Playwright'],
     highlights: [
-      'An agent loop lets Claude choose and chain tool calls across the NBA, NFL, MLB, and NHL, capped at six steps per answer.',
-      'Responses stream as typed events, so the interface shows each data fetch as a live status ticker while the text arrives.',
-      'Zod validates the data source’s responses and Claude’s tool arguments, and the chat route is rate-limited with an optional shared Redis store.',
+      'TanStack Query holds the server state, with per-practice cache keys, mutations that refetch, and Undo on every status change and move. A taken time slot returns a 409, and other open tabs update without a reload.',
+      'The status workflow, role permissions, overlap detection, and open-slot finder are pure functions with no React in them, built test-first. Front desk, provider, and office manager each see only the actions they are allowed.',
+      'Claude turns a typed request into form fields through a server route that keeps the API key off the browser. Code picks the open times, a person books, and an eval measures the assist’s accuracy.',
+      'The dialog, tabs, and toast are hand-built: dialogs trap and return focus, and changes are announced. axe runs on every screen in both themes in CI.',
     ],
-    liveUrl: 'https://sports-analyst-agent.vercel.app',
-    sourceUrl: 'https://github.com/Dayshawn21/sports-analyst-agent',
+    liveUrl: 'https://front-desk-board.vercel.app/',
+    sourceUrl: 'https://github.com/Dayshawn21/front-desk-board',
     screenshot: {
-      src: '/sports-analyst-agent.jpg',
-      alt: 'Sports Analyst Agent answering “How have the 76ers looked lately?”, with tickers showing it fetched the NBA schedule and standings before replying.',
-      width: 592,
-      height: 262,
+      src: '/front-desk-board.jpg',
+      alt: 'Front Desk Board’s schedule in dark mode: three chairs as columns, colour-coded visit statuses, a now line at 9:40 AM, and a red banner flagging a double-booking in Chair 2.',
+      width: 1200,
+      height: 750,
     },
-  },
-  {
-    id: 'hennessy-aws-demo',
-    name: 'Photography site on AWS',
-    tagline: 'Serverless booking demo on AWS',
-    boardTag: 'Cloud',
-    summary:
-      'I built a demo React site for a photography business on AWS, using placeholder images. Inquiries and booking requests go through a serverless API, and an admin dashboard sits behind a login.',
-    technologies: ['React', 'TypeScript', 'AWS Lambda', 'DynamoDB', 'Cognito', 'CloudFront'],
-    highlights: [
-      'The static build is served from a private S3 bucket through CloudFront with Origin Access Control, and API Gateway routes requests to TypeScript Lambda functions, each with its own IAM role.',
-      'A single DynamoDB transaction books a time slot only if it is still open. A parallel-request test confirmed exactly one booking succeeds.',
-      'Admin routes use Cognito login with a JWT authorizer, and the Lambda checks group membership again before confirming or declining requests.',
-    ],
-    liveUrl: 'https://d3vxtn9s8u8bor.cloudfront.net',
-    sourceUrl: 'https://github.com/Dayshawn21/hennessy-aws-demo',
-    architecture: [
-      { label: 'Site', steps: ['CloudFront', 'Private S3'] },
-      { label: 'API', steps: ['API Gateway', 'Lambda', 'DynamoDB'] },
-      { label: 'Admin', steps: ['Cognito', 'JWT authorizer', 'Lambda'] },
-    ],
   },
 ];
 

@@ -27,7 +27,7 @@ script = script.replaceAll(originalResume, JSON.stringify(resume));
 html = html.replaceAll('href="/Dayshawn_Terry_Resume.pdf"', `href="${resume}"`);
 
 // Same treatment for the project screenshots, which content.ts references by path.
-for (const file of ['lineform-how-it-works.png', 'lineform-how-it-works-mobile.png', 'sports-analyst-agent.jpg']) {
+for (const file of ['lineform-how-it-works.png', 'lineform-how-it-works-mobile.png', 'front-desk-board.jpg']) {
   const screenshotPath = `/${file}`;
   const screenshot = `data:image/${file.endsWith('.jpg') ? 'jpeg' : 'png'};base64,${(await readFile(path.join(dist, file))).toString('base64')}`;
   if (!script.includes(JSON.stringify(screenshotPath))) throw new Error(`The offline reference to ${file} could not be located in the build.`);
