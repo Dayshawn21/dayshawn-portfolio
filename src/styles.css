@@ -380,23 +380,27 @@ a > svg[data-icon] { transition: transform var(--duration-feedback) var(--ease-o
   .header-contact { order: 2; min-height: 44px; font-size: 18px; }
   nav { order: 3; width: 100%; margin-left: -10px; }
   nav a { font-size: 19px; }
-  .intro { padding-top: 28px; }
+  .intro { padding-top: 16px; }
+  .intro-board { gap: 24px; }
   .work { padding-top: 56px; }
-  h1 { font-size: clamp(3.2rem, 17.5vw, 5.4rem); gap: 10px; }
+  h1 { font-size: clamp(3.2rem, 15.5vw, 5.4rem); gap: 10px; }
   .tile { box-shadow: 0 0 0 4px var(--color-slot); }
-  .intro-role { margin-top: 24px; font-size: 21px; }
+  .intro-role { margin-top: 16px; font-size: 19px; }
   .role-part { display: block; }
   .role-sep { display: none; }
   .intro-copy { font-size: 17px; }
+  .intro-actions { margin-top: 18px; gap: 6px 28px; }
+  .availability { margin-top: 12px; }
   .intro-actions .button { width: 100%; }
-  .now-posting { padding: 22px 18px; }
+  .now-posting { padding: 18px 18px 22px; }
   .now-posting-title { font-size: 22px; }
-  .board-slots { grid-template-columns: minmax(0, 1fr); }
+  .board-slots { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
   .slot-thumb { display: none; }
-  .board-slot { grid-template-columns: minmax(0, 1fr) 78px; min-height: 64px; }
-  .slot-tag { padding-inline: 6px; font-size: 17px; white-space: normal; }
+  .board-slot { grid-template-columns: minmax(0, 1fr); grid-template-rows: 1fr auto; min-height: 0; }
+  .slot-tag { padding: 8px 10px 5px; font-size: 16px; white-space: normal; }
+  .slot-tagline { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   .slot-name { font-size: 21px; }
-  .slot-text { padding-inline: 14px; }
+  .slot-text { justify-content: flex-start; padding: 12px 14px; }
   .side-project-architecture { padding: 16px; }
   .architecture-row { grid-template-columns: 1fr; gap: 6px; }
   .project-summary { font-size: 19px; }
