@@ -155,8 +155,8 @@ export const projects: Project[] = [
       alt: 'Front Desk Board’s schedule in dark mode: chairs as columns, colour-coded visit statuses, a now line at 9:40 AM, and a red banner flagging a double-booking in Chair 2.',
       width: 1200,
       height: 750,
-      mobileWidth: 760,
-      mobileHeight: 700,
+      mobileWidth: 640,
+      mobileHeight: 589,
     },
     pipeline: [],
     decisions: [
