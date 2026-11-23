@@ -53,7 +53,7 @@ export const projects: Project[] = [
     liveUrl: 'https://sportapp-web-7v3r.onrender.com/#/',
     sourceUrl: 'https://github.com/Dayshawn21/Sports-Baseline',
     explanationUrl: 'https://sportapp-web-7v3r.onrender.com/#/how-it-works',
-    thumbnail: { src: '/thumb-lineform.jpg', smallSrc: '/thumb-lineform-640.jpg', width: 920, height: 414 },
+    thumbnail: { src: '/thumb-lineform.jpg', smallSrc: '/thumb-lineform-640.jpg', width: 920, height: 590 },
     liveNote: 'The live app can take a moment to load. If it’s unavailable, everything on this page still explains how it works.',
     caseStudyIntroduction: 'I built Lineform’s frontend, backend, and data workflows. These are a few of the decisions behind the product.',
     screenshot: {
