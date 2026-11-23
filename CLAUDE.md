@@ -17,9 +17,12 @@ npm run typecheck         # tsc --noEmit
 npm run build             # typecheck + vite build + scripts/prerender.mjs -> dist/
 npm run preview           # serve dist/
 npm run preview:offline   # after build: writes self-contained .preview/index.html
+npm run check:live        # taste-skill checks (copy-lint, layout, perf) against www.dayshawnterry.com
 ```
 
 There is no test runner or linter configured. Verify changes with `npm run typecheck` and `npm run build`.
+
+After a push to `master`, a local `.git/hooks/pre-push` hook (not versioned) starts `scripts/check-live.mjs` in the background. It waits for Vercel's GitHub status on the pushed commit, runs the design-taste-frontend skill's checks against the live site, and writes `.taste-skill/live-checks/latest.md`, including what changed since the previous run. It needs that skill installed locally and an authenticated `gh`; without them it exits quietly. The hook never blocks a push.
 
 Project automations in `.claude/`: a PostToolUse hook type-checks after edits to `src/**/*.ts(x)`, and a PreToolUse hook blocks writes to the resume PDF. `/add-project` adds a project entry, `/ship-check` runs the pre-release checks, and the `content-guard` agent reviews copy changes against `PRODUCT.md`. `.mcp.json` provides Playwright (browser checks) and context7 (library docs).
 

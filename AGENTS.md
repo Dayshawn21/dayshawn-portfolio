@@ -345,6 +345,7 @@ blocks `npm`.
 - Build: `npm run build` (typecheck, Vite build, then prerender and social image into `dist/`)
 - Production preview: `npm run preview` (serves `dist/`)
 - Offline preview: `npm run preview:offline` (after build; writes `.preview/index.html`)
+- Live checks: `npm run check:live` (taste-skill copy-lint, layout and perf checks against the live site; report in `.taste-skill/live-checks/latest.md`). A local, unversioned `.git/hooks/pre-push` starts it in the background after each push to `master`.
 
 There is no linter. `npm run build` already runs the typecheck first and is the
 closest existing combined check; no separate Verify command is declared yet.
