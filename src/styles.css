@@ -189,6 +189,7 @@ a > svg[data-icon] { transition: transform var(--duration-feedback) var(--ease-o
 .project-note { margin-top: 12px; font-size: 14px; color: var(--color-chalk); }
 
 .case-study { margin-top: 96px; scroll-margin-top: 32px; }
+.project + .project { margin-top: var(--space-section); }
 .section-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 56px; align-items: end; }
 .section-intro h3 { font-size: clamp(2rem, 3vw, 2.5rem); font-weight: 850; line-height: .95; color: var(--color-gold); }
 .section-intro > p { font-size: 19px; line-height: 1.6; color: var(--color-chalk); max-width: 60ch; }

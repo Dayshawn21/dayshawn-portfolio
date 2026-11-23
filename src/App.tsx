@@ -142,7 +142,7 @@ function ProjectFeature({ project, primary }: { project: Project; primary: boole
             <ExternalLink href={project.liveUrl} className="button button-primary">Open live app<Icon name="arrow-up-right" /></ExternalLink>
             {project.sourceUrl && <ExternalLink href={project.sourceUrl} className="text-link"><Icon name="code" />View source</ExternalLink>}
           </div>
-          <p className="project-note">The live app can take a moment to load. If it’s unavailable, everything on this page still explains how it works.</p>
+          {project.liveNote && <p className="project-note">{project.liveNote}</p>}
           {project.decisions.length > 0 && <a className="text-link project-case-link" href={primary ? '#case-study' : `#${project.id}-case-study`}>Read the case study<Icon name="arrow-down" /></a>}
         </div>
         {project.screenshot && (
@@ -151,7 +151,7 @@ function ProjectFeature({ project, primary }: { project: Project; primary: boole
               <source media="(max-width: 560px)" srcSet={project.screenshot.mobileSrc} width={project.screenshot.mobileWidth} height={project.screenshot.mobileHeight} />
               <img src={project.screenshot.src} alt={project.screenshot.alt} width={project.screenshot.width} height={project.screenshot.height} loading="lazy" decoding="async" />
             </picture>
-            <figcaption>{project.screenshot.caption}</figcaption>
+            {project.screenshot.caption && <figcaption>{project.screenshot.caption}</figcaption>}
           </figure>
         )}
       </div>
@@ -255,7 +255,7 @@ export default function App() {
 
         <section className="about" id="about" aria-labelledby="about-title">
           <div className="container">
-            <div className="about-intro"><h2 className="board-title" id="about-title">About</h2><div><p>I’m drawn to the work between complicated systems and the people using them. At Visualutions, that meant reusable interfaces, data-heavy dashboards, and business workflows that needed to work reliably.</p><p>In my own projects, I take that care through the full stack. Lineform runs from scheduled data jobs and database queries to a React interface and a Claude-powered assistant. Front Desk Board brings my enterprise habits to a scheduling demo: business rules as tested functions, role-based actions, and accessibility checked in CI.</p><p className="education">B.A., Computer Investigation and Criminal Justice<br /><span>St. Ambrose University</span></p></div></div>
+            <div className="about-intro"><h2 className="board-title" id="about-title">About</h2><div><p>I’m drawn to the work between complicated systems and the people using them. At Visualutions, that meant reusable interfaces, data-heavy dashboards, and business workflows that needed to work reliably.</p><p>In my own projects, I take that care further. Lineform runs through the full stack, from scheduled data jobs and database queries to a React interface and a Claude-powered assistant. Front Desk Board brings my enterprise habits to a frontend scheduling demo: business rules as tested functions, role-based actions, and accessibility checked in CI.</p><p className="education">B.A., Computer Investigation and Criminal Justice<br /><span>St. Ambrose University</span></p></div></div>
             <div className="skills">{skillGroups.map(group => <section className="skill-group" key={group.title} aria-labelledby={`skills-${group.title.split(' ')[0].toLowerCase()}`}><h3 id={`skills-${group.title.split(' ')[0].toLowerCase()}`}>{group.title}</h3><ul>{group.skills.map(skill => <li key={skill}>{skill}</li>)}</ul></section>)}</div>
           </div>
         </section>

@@ -32,8 +32,9 @@ export interface Project {
   liveUrl: string;
   sourceUrl?: string;
   explanationUrl?: string;
+  liveNote?: string;
   caseStudyIntroduction: string;
-  screenshot?: { src: string; mobileSrc: string; alt: string; caption: string; width: number; height: number; mobileWidth: number; mobileHeight: number };
+  screenshot?: { src: string; mobileSrc: string; alt: string; caption?: string; width: number; height: number; mobileWidth: number; mobileHeight: number };
   pipeline: PipelineStage[];
   decisions: { area: string; description: string; lesson: string }[];
 }
@@ -51,6 +52,7 @@ export const projects: Project[] = [
     liveUrl: 'https://sportapp-web-7v3r.onrender.com/#/',
     sourceUrl: 'https://github.com/Dayshawn21/Sports-Baseline',
     explanationUrl: 'https://sportapp-web-7v3r.onrender.com/#/how-it-works',
+    liveNote: 'The live app can take a moment to load. If it’s unavailable, everything on this page still explains how it works.',
     caseStudyIntroduction: 'I built Lineform’s frontend, backend, and data workflows. These are a few of the decisions behind the product.',
     screenshot: {
       src: '/lineform-how-it-works.png',
@@ -131,6 +133,56 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    id: 'front-desk-board',
+    name: 'Front Desk Board',
+    tagline: 'Dental front desk scheduling demo',
+    boardTag: 'Frontend',
+    summary:
+      'A scheduling board for the front desk of a fictional dental office: chairs as columns, patients moving from check-in to checkout, and double-bookings flagged.',
+    role: 'Independent project · invented data only',
+    technologies: ['React', 'TypeScript', 'TanStack Query', 'Tailwind', 'Claude API', 'Vitest', 'Playwright'],
+    liveUrl: 'https://front-desk-board.vercel.app/',
+    sourceUrl: 'https://github.com/Dayshawn21/front-desk-board',
+    explanationUrl: 'https://github.com/Dayshawn21/front-desk-board/blob/main/docs/TOUR.md',
+    caseStudyIntroduction: 'Every patient, practice, and provider is invented. These are a few of the decisions behind the app.',
+    screenshot: {
+      src: '/front-desk-board.jpg',
+      mobileSrc: '/front-desk-board-mobile.jpg',
+      alt: 'Front Desk Board’s schedule in dark mode: chairs as columns, colour-coded visit statuses, a now line at 9:40 AM, and a red banner flagging a double-booking in Chair 2.',
+      width: 1200,
+      height: 750,
+      mobileWidth: 760,
+      mobileHeight: 700,
+    },
+    pipeline: [],
+    decisions: [
+      {
+        area: 'Server state',
+        description:
+          'Nearly all of the state is server data, so it lives in the TanStack Query cache with per-practice keys. Mutations refetch, every status change and move can be undone, and the mock API returns a 409 when someone else just took the slot.',
+        lesson: 'Most frontend state is server state. Treat it that way and the UI stays simpler.',
+      },
+      {
+        area: 'Business rules',
+        description:
+          'The status workflow, role permissions, overlap detection, and open-slot finder are pure functions with no React in them, built test-first. Times are the practice’s wall-clock strings, not Date objects, so results never shift with the viewer’s timezone.',
+        lesson: 'Rules that live outside the components are easier to test and harder to break.',
+      },
+      {
+        area: 'AI booking assist',
+        description:
+          'Claude turns a typed request into form fields through a server route that keeps the API key off the browser. Picking a time stays deterministic code, a person always books, and an eval measures how accurate the assist is.',
+        lesson: 'Let the model fill in the form. Let code and people make the decisions.',
+      },
+      {
+        area: 'Accessibility',
+        description:
+          'I hand-built the dialog, tabs, and toast instead of using a UI library: dialogs trap and return focus, tabs follow the ARIA pattern, and changes are announced. axe runs on every screen, in both themes, in CI.',
+        lesson: 'Accessibility holds up when it is tested, not only intended.',
+      },
+    ],
+  },
 ];
 
 export interface SideProject {
@@ -147,31 +199,7 @@ export interface SideProject {
   architecture?: { label: string; steps: string[] }[];
 }
 
-export const moreProjects: SideProject[] = [
-  {
-    id: 'front-desk-board',
-    name: 'Front Desk Board',
-    tagline: 'Dental front desk scheduling demo',
-    boardTag: 'Frontend',
-    summary:
-      'I built a scheduling board for the front desk of a fictional dental office: chairs as columns, patients moving from check-in to checkout, double-bookings flagged, and new visits booked with an optional AI assist. Every patient and practice is invented.',
-    technologies: ['React', 'TypeScript', 'TanStack Query', 'Tailwind', 'Claude API', 'Playwright'],
-    highlights: [
-      'TanStack Query holds the server state, with per-practice cache keys, mutations that refetch, and Undo on every status change and move. A taken time slot returns a 409, and other open tabs update without a reload.',
-      'The status workflow, role permissions, overlap detection, and open-slot finder are pure functions with no React in them, built test-first. Front desk, provider, and office manager each see only the actions they are allowed.',
-      'Claude turns a typed request into form fields through a server route that keeps the API key off the browser. Code picks the open times, a person books, and an eval measures the assist’s accuracy.',
-      'The dialog, tabs, and toast are hand-built: dialogs trap and return focus, and changes are announced. axe runs on every screen in both themes in CI.',
-    ],
-    liveUrl: 'https://front-desk-board.vercel.app/',
-    sourceUrl: 'https://github.com/Dayshawn21/front-desk-board',
-    screenshot: {
-      src: '/front-desk-board.jpg',
-      alt: 'Front Desk Board’s schedule in dark mode: three chairs as columns, colour-coded visit statuses, a now line at 9:40 AM, and a red banner flagging a double-booking in Chair 2.',
-      width: 1200,
-      height: 750,
-    },
-  },
-];
+export const moreProjects: SideProject[] = [];
 
 export interface Experience {
   employer: string;
