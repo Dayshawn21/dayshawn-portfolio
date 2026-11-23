@@ -57,12 +57,12 @@ export const projects: Project[] = [
     screenshot: {
       src: '/lineform-how-it-works.png',
       mobileSrc: '/lineform-how-it-works-mobile.png',
-      alt: 'The How data flows list from Lineform’s How it works page: scheduled jobs collect data, providers’ names are matched, models produce probabilities, predictions are graded after events, and the web app shows each model’s track record.',
+      alt: 'Lineform’s top bar above the How data flows list from its How it works page: scheduled jobs collect data, providers’ names are matched, models produce probabilities, predictions are graded after events, and the web app shows each model’s track record.',
       caption: 'How data flows, from Lineform’s public How it works page, November 2026.',
-      width: 674,
-      height: 338,
-      mobileWidth: 460,
-      mobileHeight: 426,
+      width: 760,
+      height: 342,
+      mobileWidth: 430,
+      mobileHeight: 472,
     },
     pipeline: [
       {
